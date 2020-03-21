@@ -1,5 +1,4 @@
-﻿
-{
+﻿{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
@@ -16,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "reactDemo": {
+    "qf.AspNetCore3_1.Project": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

@@ -1,0 +1,2 @@
+﻿可以用控制台终端托管网站
+dotnet qf.AspNetCore3_1.Project.dll --urls="http://*:5177" --ip="127.0.01" --port=5177

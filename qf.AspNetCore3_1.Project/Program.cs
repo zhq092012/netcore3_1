@@ -18,6 +18,12 @@ namespace qf.AspNetCore3_1.Project
 
     public static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
+            //.ConfigureLogging((context, loggingBuilder) =>
+            //{
+            //  loggingBuilder.AddFilter("System", LogLevel.Warning);//过滤掉命名空间
+            //  loggingBuilder.AddFilter("Microsoft", LogLevel.Warning);
+            //  loggingBuilder.AddLog4Net();
+            //})
             .ConfigureWebHostDefaults(webBuilder =>
             {
               webBuilder.UseStartup<Startup>();

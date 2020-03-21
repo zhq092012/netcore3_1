@@ -1,10 +1,12 @@
 ﻿@model qf.AspNetCore3_1.Project.Models.CurrentUser
+@using Microsoft.AspNetCore.Http
 @{
-  ViewData["Title"] = "Index";
-  CurrentUser userViewData = ViewData["User"] as CurrentUser;
-  CurrentUser userViewBag = ViewBag.User;
-  CurrentUser userOther = ViewBag.User;
-  CurrentUser userTemp = base.TempData["User"] as CurrentUser;
+    ViewData["Title"] = "Index";
+    CurrentUser userViewData = ViewData["User"] as CurrentUser;
+    CurrentUser userViewBag = ViewBag.User;
+    CurrentUser userOther = ViewBag.User;
+    CurrentUser userTemp = base.TempData["User"] as CurrentUser;
+    CurrentUser sessionUser = Newtonsoft.Json.JsonConvert.DeserializeObject<CurrentUser>(base.Context.Session.GetString("UserSession"));
 }
 <h1>
     First-Index
@@ -18,5 +20,6 @@
         <p>userOther:@userOther.Name</p>
         <p>userTemp:@userTemp.Name</p>
         <p>Model:@base.Model.Name</p>
+        <p>userSession:@sessionUser.Name</p>
     </div>
 </div>
