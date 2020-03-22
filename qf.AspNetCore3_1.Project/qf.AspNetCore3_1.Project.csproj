@@ -16,6 +16,7 @@
     <Folder Include="Views\First\" />
     <Folder Include="Properties\" />
     <Folder Include="MiddleWare\" />
+    <Folder Include="Views\Third\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="appsettings.json" />
@@ -25,5 +26,13 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\qf.AspNetCore3_1.Service\qf.AspNetCore3_1.Service.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\qf.AspNetCore3_1.Interface\qf.AspNetCore3_1.Interface.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

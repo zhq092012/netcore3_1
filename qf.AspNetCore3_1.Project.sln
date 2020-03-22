@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qf.AspNetCore3_1.Project", "qf.AspNetCore3_1.Project\qf.AspNetCore3_1.Project.csproj", "{681ADD29-1787-4A4E-A771-80ACF85C9C0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qf.AspNetCore3_1.Interface", "qf.AspNetCore3_1.Interface\qf.AspNetCore3_1.Interface.csproj", "{5E7C695E-9575-4F31-92AC-546E38C39DFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qf.AspNetCore3_1.Service", "qf.AspNetCore3_1.Service\qf.AspNetCore3_1.Service.csproj", "{1F08CE10-AF0D-404E-985B-4BAA23F960AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{681ADD29-1787-4A4E-A771-80ACF85C9C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{681ADD29-1787-4A4E-A771-80ACF85C9C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{681ADD29-1787-4A4E-A771-80ACF85C9C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E7C695E-9575-4F31-92AC-546E38C39DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E7C695E-9575-4F31-92AC-546E38C39DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E7C695E-9575-4F31-92AC-546E38C39DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E7C695E-9575-4F31-92AC-546E38C39DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F08CE10-AF0D-404E-985B-4BAA23F960AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F08CE10-AF0D-404E-985B-4BAA23F960AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F08CE10-AF0D-404E-985B-4BAA23F960AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F08CE10-AF0D-404E-985B-4BAA23F960AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
