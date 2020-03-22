@@ -4,7 +4,7 @@
 using System;
 namespace qf.AspNetCore3_1.Interface
 {
-    public interface InterfaceA
+    public interface InterfaceC
     {
         public string show();
     }

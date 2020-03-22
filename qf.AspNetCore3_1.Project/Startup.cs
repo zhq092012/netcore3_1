@@ -32,6 +32,8 @@ namespace qf.AspNetCore3_1.Project
             services.AddControllersWithViews();
             services.AddSession();
             services.AddTransient<InterfaceA, ServiceA>();
+            services.AddSingleton<InterfaceB, ServiceB>();//进程单例
+            services.AddScoped<InterfaceC, ServiceC>();//作用域单例
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

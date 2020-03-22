@@ -6,15 +6,17 @@ using qf.AspNetCore3_1.Interface;
 
 namespace qf.AspNetCore3_1.Service
 {
-    public class ServiceA : InterfaceA
+    public class ServiceB : InterfaceB
     {
-        public ServiceA()
+        private static InterfaceA @interface;
+        public ServiceB(InterfaceA interfaceA)
         {
+            @interface = interfaceA;
         }
 
         public string show()
         {
-            return "serviceA...";
+            return @interface.show() + "serviceB...";
         }
     }
 }
