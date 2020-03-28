@@ -6,5 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\qf.AspNetCore3_1.Interface\qf.AspNetCore3_1.Interface.csproj" />
+    <ProjectReference Include="..\qf.AspNetCore3_1.Common\qf.AspNetCore3_1.Common.csproj" />
   </ItemGroup>
 </Project>

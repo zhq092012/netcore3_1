@@ -39,4 +39,7 @@
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Utility\CustomAutofacAop.cs" />
+  </ItemGroup>
 </Project>
