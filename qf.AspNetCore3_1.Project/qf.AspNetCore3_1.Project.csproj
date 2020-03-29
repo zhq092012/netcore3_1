@@ -21,6 +21,7 @@
     <Folder Include="Views\Third\" />
     <Folder Include="Views\Fifth\" />
     <Folder Include="Utility\" />
+    <Folder Include="Views\Sixth\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="appsettings.json" />

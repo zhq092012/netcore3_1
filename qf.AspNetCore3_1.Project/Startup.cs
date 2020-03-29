@@ -43,6 +43,8 @@ namespace qf.AspNetCore3_1.Project
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
+      //服务端缓存 Memorycache
+      services.AddResponseCaching();
       //全局注册异常处理
       services.AddControllersWithViews(
           options => options.Filters.Add(typeof(CustomExceptionFilterAttribute))
@@ -82,6 +84,10 @@ namespace qf.AspNetCore3_1.Project
         // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
         app.UseHsts();
       }
+
+      #region 服务端缓存
+      app.UseResponseCaching();
+      #endregion
 
       #region 注册log4写日志
       //注册log4写日志
